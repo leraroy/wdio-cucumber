@@ -1,0 +1,27 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@babel/core": "^7.19.6",
+        "@babel/preset-env": "^7.19.4",
+        "@babel/register": "^7.18.9",
+        "@faker-js/faker": "^7.6.0",
+        "@wdio/cli": "^7.25.4",
+        "@wdio/cucumber-framework": "^7.25.4",
+        "@wdio/local-runner": "^7.25.4",
+        "@wdio/spec-reporter": "^7.25.4",
+        "chromedriver": "^107.0.3",
+        "multiple-cucumber-html-reporter": "^3.0.1",
+        "wdio-chromedriver-service": "^8.0.0",
+        "wdio-cucumberjs-json-reporter": "^4.4.3"
+    },
+    "scripts": {
+        "test": "wdio run ./wdio.conf.js",
+        "test:chrome":"wdio run ./conf/wdio.chrome.conf.js",
+        "test:chrome:headless":"wdio run ./conf/wdio.chromeHeadless.conf.js",
+        "login:test": "wdio run ./conf/wdio.conf.js --spec login.feature",
+        "signup:test": "wdio run ./conf/wdio.conf.js --spec create.account.feature",
+        "main:test": "wdio run ./wdio.conf.js --spec main.feature"
+    }
+}
