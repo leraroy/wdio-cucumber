@@ -18,6 +18,10 @@ Configuration files are located here:
 - Clone and checkout the github project 
 - Go to the terminal and execute "npm install" command
 
+### Command to run test 
+```
+npm run test
+```
 ### Command to run test in Chrome browser using wdio.chrome.conf file
  ```
  npm run test:chrome
