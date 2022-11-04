@@ -37,7 +37,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: report
-          path: .tmp/report/index.html
+          path: .tmp/report/
           retention-days: 20
   
       - name: Get history
@@ -54,4 +54,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: .tmp/report/index.html
+          PUBLISH_DIR: report
