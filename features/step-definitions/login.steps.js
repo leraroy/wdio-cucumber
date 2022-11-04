@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-
+import { getData} from "../../helper/random.data";
 import LoginPage from '../../pages/login.page';
 
 
@@ -12,6 +12,7 @@ When('Login with email: {string} and password: {string}',async(email, password)=
 });
 
 When('Login with {string} and {string}',async(email, password)=>{
+   email=await getData(email);
    await LoginPage.login(email,password); 
 });
 

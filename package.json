@@ -20,8 +20,8 @@
         "test": "wdio run ./wdio.conf.js",
         "test:chrome":"wdio run ./conf/wdio.chrome.conf.js",
         "test:chrome:headless":"wdio run ./conf/wdio.chromeHeadless.conf.js",
-        "login:test": "wdio run ./conf/wdio.conf.js --spec login.feature",
-        "signup:test": "wdio run ./conf/wdio.conf.js --spec create.account.feature",
+        "login:test": "wdio run ./wdio.conf.js --spec login.feature",
+        "signup:test": "wdio run ./wdio.conf.js --spec create.account.feature",
         "main:test": "wdio run ./wdio.conf.js --spec main.feature"
     }
 }

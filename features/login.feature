@@ -18,6 +18,6 @@ Feature: Login Page
 
             Examples:
                   | email                | password     | message                                                                    |
-                  | kelfmlmty@uaua.kv    | qwerty123    | The account sign-in was incorrect or your account is disabled temporarily. |
+                  | randomEmail          | qwerty123    | The account sign-in was incorrect or your account is disabled temporarily. |
                   | kate.smith@gmail.com | hdbhb        | The account sign-in was incorrect or your account is disabled temporarily. |
-                  | sdmlml@uaua.kv       | Qwerty!23456 | The account sign-in was incorrect or your account is disabled temporarily. |
+                  | randomEmail          | Qwerty!23456 | The account sign-in was incorrect or your account is disabled temporarily. |
