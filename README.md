@@ -29,4 +29,4 @@ npm run test
  ### Command to run test in Chrome browser using wdio.chromeHeadless file
  ```
  npm run test:chrome:headless
- ```
+ ``` 
